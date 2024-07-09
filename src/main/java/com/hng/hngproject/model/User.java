@@ -8,6 +8,7 @@ import lombok.Data;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
+
 @Data
 @Entity
 public class User {
@@ -40,5 +41,5 @@ public class User {
     )
     private Set<Organisation> organisations = new HashSet<>();
 
-    // Getters and Setters
+
 }
