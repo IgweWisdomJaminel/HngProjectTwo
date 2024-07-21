@@ -47,9 +47,13 @@ public class UserService {
         if (user.isPresent() && passwordEncoder.matches(userLoginDTO.getPassword(), user.get().getPassword())) {
             return user;
         }
+        //making corrections
+
         return Optional.empty();
     }
+    public void newMethod(){
 
+    }
     public String generateToken(User user) {
         return jwtTokenUtil.generateToken(user.getEmail());
     }
